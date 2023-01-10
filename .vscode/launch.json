@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Serverless Debug",
+            "type": "python",
+            "request": "attach",
+            "port": 5890,
+            "host": "localhost",
+            "console": "integratedTerminal",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "."
+                }
+            ]
+        }
+    ]
+}

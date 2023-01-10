@@ -1,0 +1,24 @@
+service: aws-python-debugger-example
+
+frameworkVersion: '3'
+
+custom:
+  wsgi:
+    app: app.app
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  test:
+    handler: handler.handler
+    events:
+      - httpApi:
+          path: /test
+          method: GET
+         
+
+plugins:
+  - serverless-python-requirements
+  - serverless-offline

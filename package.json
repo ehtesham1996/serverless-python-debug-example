@@ -1,0 +1,14 @@
+{
+  "name": "aws-python-flask-api-project",
+  "version": "1.0.0",
+  "description": "Example of a Python Flask API service with traditional Serverless Framework",
+  "author": "",
+  "scripts": {
+    "predebug": "node prepare-debug.js",
+    "debug": "DEBUG=true sls offline start --host 0.0.0.0 --noTimeout"
+  },
+  "devDependencies": {
+    "serverless-offline": "^12.0.4",
+    "serverless-python-requirements": "^6.0.0"
+  }
+}
